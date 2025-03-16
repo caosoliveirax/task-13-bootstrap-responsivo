@@ -11,16 +11,16 @@
 <body>
     <header class="py-1">
         <div class="navbar navbar-expand-lg">
-            <div class="container">
+            <div class="container-lg">
                 <h1 class="text-white fw-bold vertical-center">
-                    <span style="color: #809076;">NOVELS</span>
+                    <span class="novels">NOVELS</span>
                     <div id="x-animated">
-                        <span style="color: #ccc;"></span>
-                        <span style="color: #ccc;"></span>
+                        <span></span>
+                        <span></span>
                     </div>
-                    <span style="color: #8a8635;">MANGÁS</span>
+                    <span class="mangas">MANGÁS</span>
                 </h1>
-                <nav class="justify-content-end">
+                <nav class="navbar navbar-expand-lg justify-content-end">
                     <ul class="nav navbar-nav nav-pills">
                         <li class="nav-item">
                             <a class="nav-link active" href="#home">Home</a>
@@ -34,7 +34,63 @@
                     </ul>
                 </nav>
             </div>
+        </div>
     </header>
+    <main>
+        <section class="container-fluid p-0">
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <div class="carousel carousel-fade slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div data-bs-interval="4000" class="carousel-item active">
+                                <img class="d-block w-100" src="./images/slide1.jpg" alt="">
+                                <div class="carousel-caption">
+                                    <h2>Adentre os horrores cósmicos de Lovecraft</h2>
+                                </div>
+                            </div>
+                            <div data-bs-interval="5000" class="carousel-item">
+                                <img class="d-block w-100" src="./images/slide2.png" alt="">
+                                <div class="carousel-caption">
+                                    <h2>Acompanhe a tripulação do Chapéu De Palha</h2>
+                                </div>
+                            </div>
+                            <div data-bs-interval="5000" class="carousel-item">
+                                <img class="d-block w-100" src="./images/slide3.jpg" alt="">
+                                <div class="carousel-caption">
+                                    <h2>Explore o poder das Esferas do Dragão com Goku e seus amigos</h2>
+                                </div>
+                            </div>
+                            <div data-bs-interval="4000" class="carousel-item">
+                                <img class="d-block w-100" src="./images/slide4.jpg" alt="">
+                                <div class="carousel-caption">
+                                    <h2>Caminhe entre dragões e reis em Westeros</h2>
+                                </div>
+                            </div>
+                            <div data-bs-interval="6000" class="carousel-item">
+                                <img class="d-block w-100" src="./images/slide5.jpg" alt="">
+                                <div class="carousel-caption">
+                                    <h2>Mergulhe no charme da Inglaterra com Elizabeth Bennet e o enigmático Mr. Darcy.</h2>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" data-bs-target=".carousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" data-bs-target=".carousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                            <div class="carousel-indicators">
+                                <button class="active" data-bs-target=".carousel" data-bs-slide-to="0"></button>
+                                <button data-bs-target=".carousel" data-bs-slide-to="1"></button>
+                                <button data-bs-target=".carousel" data-bs-slide-to="2"></button>
+                                <button data-bs-target=".carousel" data-bs-slide-to="3"></button>
+                                <button data-bs-target=".carousel" data-bs-slide-to="4"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="./lib/bootstrap.bundle.min.js"></script>
 </body>
 </html>
