@@ -9,10 +9,10 @@
     
 </head>
 <body>
-    <header class="py-1">
-        <div class="navbar navbar-expand-lg">
-            <div class="container-lg">
-                <h1 class="text-white fw-bold vertical-center">
+    <header id="home" class="pt-1 py-lg-2">
+        <div class="navbar navbar-expand-md">
+            <div class="container-sm">
+                <h1 class="text-white fw-bold vertical-center mb-0">
                     <span class="novels">NOVELS</span>
                     <div id="x-animated">
                         <span></span>
@@ -20,15 +20,18 @@
                     </div>
                     <span class="mangas">MANGÁS</span>
                 </h1>
-                <nav class="navbar navbar-expand-lg justify-content-end">
-                    <ul class="nav navbar-nav nav-pills">
-                        <li class="nav-item">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="navbar-nav nav-pills text-center pt-2">
+                        <li class="nav-item p-0">
                             <a class="nav-link active" href="#home">Home</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item p-0">
                             <a class="nav-link" href="#books">Livros</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item p-0">
                             <a class="nav-link" href="#mangas">Mangás</a>
                         </li>
                     </ul>
@@ -36,8 +39,9 @@
             </div>
         </div>
     </header>
+    
     <main>
-        <section id="home" class="container-fluid p-0">
+        <section class="container-fluid p-0">
             <div class="row justify-content-center">
                 <div class="col-12">
                     <div class="carousel carousel-fade slide" data-bs-ride="carousel">
@@ -45,31 +49,31 @@
                             <div data-bs-interval="4000" class="carousel-item active">
                                 <img class="d-block w-100" src="./images/carousel/cthulhu1.jpg" alt="">
                                 <div class="carousel-caption">
-                                    <h2>Adentre os horrores cósmicos de Lovecraft</h2>
+                                    <p>Adentre os horrores cósmicos de Lovecraft</p>
                                 </div>
                             </div>
                             <div data-bs-interval="5000" class="carousel-item">
                                 <img class="d-block w-100" src="./images/carousel/onepiece2.png" alt="">
                                 <div class="carousel-caption">
-                                    <h2>Acompanhe a tripulação do Chapéu De Palha</h2>
+                                    <p>Acompanhe a tripulação do Chapéu De Palha</p>
                                 </div>
                             </div>
                             <div data-bs-interval="5000" class="carousel-item">
                                 <img class="d-block w-100" src="./images/carousel/dragonball3.jpg" alt="">
                                 <div class="carousel-caption">
-                                    <h2>Explore o poder das Esferas do Dragão com Goku e seus amigos</h2>
+                                    <p>Explore o poder das Esferas do Dragão com Goku e seus amigos</p>
                                 </div>
                             </div>
                             <div data-bs-interval="4000" class="carousel-item">
                                 <img class="d-block w-100" src="./images/carousel/ice-fire4.jpg" alt="">
                                 <div class="carousel-caption">
-                                    <h2>Caminhe entre dragões e reis em Westeros</h2>
+                                    <p>Caminhe entre dragões e reis em Westeros</p>
                                 </div>
                             </div>
                             <div data-bs-interval="6000" class="carousel-item">
                                 <img class="d-block w-100" src="./images/carousel/pride5.jpg" alt="">
                                 <div class="carousel-caption">
-                                    <h2>Mergulhe no charme da Inglaterra com Elizabeth Bennet e o enigmático Mr. Darcy.</h2>
+                                    <p>Mergulhe no charme da Inglaterra com Elizabeth Bennet e o enigmático Mr. Darcy.</p>
                                 </div>
                             </div>
                             <button class="carousel-control-prev" data-bs-target=".carousel" data-bs-slide="prev">
@@ -91,9 +95,9 @@
             </div>
         </section>
         <section id="books">
-            <div class="container-lg pt-5">
-                <h2 class="text-white text-uppercase text-center">Livros populares</h2>
-                <div class="row row-cols-1 row-cols-lg-3 g-5 p-5">
+            <div class="container-lg px-5">
+                <h2 class="text-white text-uppercase text-center pt-5 mb-2">Livros populares</h2>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-5 p-lg-5">
                     <div class="col">
                         <div class="card position-relative h-100">
                             <img src="./images/book-covers/ice-fire.jpg" class="card-img" alt="Capa do livro As Cronicas de Gelo e Fogo: A Furia dos reis">
@@ -134,16 +138,16 @@
                         <div class="card position-relative h-100">
                             <img src="./images/book-covers/cthulhu.png" class="card-img" alt="Capa do livro O Chamado de Cthulhu e outros contos">
                             <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
-                                <p class="card-text">Cthulhu, apresentado como um ídolo de argila quase indescritível, é um deus cujo culto milenar busca trazê-lo de volta, desencadeando o fim da humanidade. Este livro reúne esse clássico e mais sete contos icônicos do autor no gênero terror.</p>
+                                <p class="card-text">O conto de Cthulhu, um deus cultuado por eras que ameaça o fim da humanidade, integra este livro ao lado de sete clássicos do terror.</p>
                                 <a href="#" class="stretched-link"></a>
                             </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card position-relative h-100">
-                            <img src="./images/book-covers/love.jpg" class="card-img" alt="Capa do livro O Chamado de Cthulhu e outros contos">
+                            <img src="./images/book-covers/love.jpg" class="card-img" alt="Capa do livro A Razão Do Amor">
                             <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
-                                <p class="card-text">Olive Smith, doutoranda em Biologia de Stanford, acredita que o amor pode ser medido. Para unir sua amiga a Jeremy, ela inventa um namoro falso e, num impulso, beija o carismático professor Adam Carlsen – e a farsa rapidamente se transforma em uma surpreendente aventura romântica.</p>
+                                <p class="card-text">A carreira de Bee Königswasser está indo de mal a pior. Quando surge um processo seletivo para liderar um projeto de neuroengenharia da Nasa, ela se faz a pergunta que sempre guiou sua vida: o que Marie Curie faria?</p>
                                 <a href="#" class="stretched-link"></a>
                             </div>
                         </div>
@@ -152,9 +156,9 @@
             </div>
         </section>
         <section id="mangas">
-            <div class="container-lg px-5">
-                <h2 class="text-white text-uppercase text-center">Mangás populares</h2>
-                <div class="row row-cols-1 row-cols-lg-3 g-5 p-5">
+            <div class="container-lg px-5 mt-5">
+                <h2 class="text-white text-uppercase text-center mb-2">Mangás populares</h2>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-5 p-lg-5">
                     <div class="col">
                         <div class="card position-relative h-100">
                             <img src="./images/manga-covers/look-back.jpg" class="card-img" alt="Capa do mangá Look Back">
@@ -168,7 +172,7 @@
                         <div class="card position-relative h-100">
                             <img src="./images/manga-covers/evangelion.jpg" class="card-img" alt="Capa do mangá Neon Genesis Evangelion">
                             <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
-                                <p class="card-text">Neon Genesis Evangelion é um anime que conta a história de adolescentes que pilotam robôs gigantes para combater monstros chamados Anjos. A série se passa em um mundo pós-apocalíptico, onde a organização paramilitar NERV tenta evitar o Terceiro Impacto.</p>
+                                <p class="card-text">Neon Genesis Evangelion narra a história de adolescentes que pilotam robôs gigantes para enfrentar os Anjos, em um mundo pós-apocalíptico onde a NERV tenta impedir o Terceiro Impacto.</p>
                                 <a href="#" class="stretched-link"></a>
                             </div>
                         </div>
@@ -193,9 +197,9 @@
                     </div>
                     <div class="col">
                         <div class="card position-relative h-100">
-                            <img src="./images/manga-covers/shingeki.jpg" class="card-img" alt="Capa do mangá Attack On Titan Volume 1">
+                            <img src="./images/manga-covers/tonikaku.jpg" class="card-img" alt="Capa do mangá Tonikaku Kawaii Volume 1">
                             <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
-                                <p class="card-text">Para se protegerem dos Titãs, seres enormes com a aparência humana que devoram pessoas, a humanidade construiu enormes muralhas e abrigou-se dentro delas. Houve cerca de um século de paz, até que, de repente, em Shinganshina, um Titã de tamanho colossal, jamais visto, apareceu.</p>
+                                <p class="card-text">Nasa Yuzakié é salvo de um atropelamento por uma bela garota no dia do vestibular. Apaixonado, ele se declara, mas ela aceita namorar apenas com a condição de se casarem antes.</p>
                                 <a href="#" class="stretched-link"></a>
                             </div>
                         </div>
@@ -213,6 +217,9 @@
             </div>
         </section>
     </main>
+    <footer class="text-uppercase text-white text-center p-2">
+        <p class="">Desenvolvido por Carlos Oliveira</p>
+    </footer>
     <script src="./lib/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -6,16 +6,18 @@
 
 body {
     font-family: "Helvetica Neue";
+    background-color: #111a19; 
+}
+
+main {
     overflow-x: hidden;
-    background-color: #111a19;
 }
 
 header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
     background-color: #111a19;
-}
-
-header h1 {
-    font-family: "Helvetica Neue";
 }
 
 .novels {
@@ -24,8 +26,9 @@ header h1 {
 .mangas {
     color: #8a8635;
 }
-.x-animated span {
-    color: #ccc;
+
+.navbar-brand span {
+    width: 0px;
 }
 
 .vertical-center {
@@ -50,8 +53,12 @@ header h1 {
     top: 50%;
     width: 100%;
     height: 3px;
-    background: #fff;
+    background: #ffffff;
     border-radius: 5px;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(136, 104, 48)' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 #x-animated span:nth-child(1) {
@@ -64,7 +71,6 @@ header h1 {
 
 .navbar-nav .nav-link.active {
     color: #111a19;
-    padding: 10px;
     background-color: #886830;
 }
 
@@ -95,13 +101,18 @@ z-index: 5;
 }
 
 .carousel-caption {
-z-index: 10; 
+    font-size: 2rem;
+    z-index: 10; 
 }
 
 .carousel-item img {
     width: 100%;
     height: 500px;
     object-fit: cover;
+}
+
+h2 {
+    font-weight: bold;
 }
 
 .card {
@@ -133,7 +144,7 @@ z-index: 10;
 
 .card:hover .card-img-overlay {
     opacity: 1;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.849), transparent);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.89), rgba(0, 0, 0, 0.164));
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -145,4 +156,42 @@ z-index: 10;
     font-size: 1.3rem;
     color: #fff;
     z-index: 1;
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .nav-link {
+        font-size: 0.7rem;
+        text-transform: uppercase;
+    }
+
+    .navbar-toggler {
+        border: none;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+
+    .carousel-item {
+        height: 60vh;
+        object-fit: cover;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .vertical-center {
+        flex-direction: row;
+    }
 }
