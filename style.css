@@ -86,7 +86,6 @@ header {
 .nav-item {
     font-weight: bold;
     font-size: 1.2rem;
-    padding: 12px;
 }
 
 .carousel-item::after {
@@ -164,9 +163,17 @@ h2 {
         font-size: 1.5rem;
     }
 
+    .nav-link li {
+        justify-content: flex-end;
+    }
+
     .nav-link {
         font-size: 0.7rem;
         text-transform: uppercase;
+    }
+
+    .nav-link:hover {
+        color: #fff;
     }
 
     .navbar-toggler {
@@ -177,12 +184,23 @@ h2 {
         box-shadow: none;
     }
 
+    .card:hover .card-img {
+        transform: unset; 
+    }
+
+    .card:hover .card-img-overlay {
+        opacity: unset;
+        background: unset;
+        box-shadow: unset;
+    }
+
     .card-text {
+        display: none;
         font-size: 0.9rem;
     }
 
-    .carousel-item {
-        height: 60vh;
+    .carousel-item img {
+        height: 40vh;
         object-fit: cover;
     }
 
@@ -194,5 +212,19 @@ h2 {
 @media (max-width: 991px) {
     .vertical-center {
         flex-direction: row;
+    }
+
+    .card:hover .card-img {
+        transform: unset; 
+    }
+
+    .card:hover .card-img-overlay {
+        opacity: unset;
+        background: unset;
+        box-shadow: unset;
+    }
+
+    .card-text {
+        display: none;
     }
 }

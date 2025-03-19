@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="style.css">
     
 </head>
-<body>
-    <header id="home" class="pt-1 py-lg-2">
+<body data-bs-spy="scroll" data-bs-target="#menu">
+    <div id="top"></div>
+    <header id="header" class="pt-1 py-lg-2">
         <div class="navbar navbar-expand-md">
             <div class="container-sm">
                 <h1 class="text-white fw-bold vertical-center mb-0">
@@ -23,15 +24,15 @@
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <nav class="collapse navbar-collapse justify-content-end" id="menu">
-                    <ul class="navbar-nav nav-pills text-center pt-2">
-                        <li class="nav-item p-0">
-                            <a class="nav-link active" href="#home">Home</a>
+                <nav class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto nav-pills text-center">
+                        <li class="nav-item m-lg-1">
+                            <a class="nav-link active" href="#top">Home</a>
                         </li>
-                        <li class="nav-item p-0">
+                        <li class="nav-item m-lg-1">
                             <a class="nav-link" href="#books">Livros</a>
                         </li>
-                        <li class="nav-item p-0">
+                        <li class="nav-item m-lg-1">
                             <a class="nav-link" href="#mangas">Mangás</a>
                         </li>
                     </ul>
