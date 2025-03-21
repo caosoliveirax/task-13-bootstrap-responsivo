@@ -10,7 +10,7 @@ html {
 
 body {
     font-family: "Helvetica Neue";
-    background-color: #111a19; 
+    background-color: #0E0F15; 
 }
 
 main {
@@ -21,20 +21,18 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: #111a19;
-    border-bottom: 2px solid #886830;
+    background-color: #0e0f15a9;
 }
-
 .novels {
-    color: #809076;
+    color: #feb21a;
 }
 .mangas {
-    color: #8a8635;
+    color: #ed3f27;
 }
 
 .vertical-center {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
 }
 
@@ -50,12 +48,12 @@ header {
     top: 50%;
     width: 100%;
     height: 3px;
-    background: #ffffff;
+    background: #fdf4e3;
     border-radius: 5px;
 }
 
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(136, 104, 48)' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(19, 71, 134, 0.603)' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 #x-header span:nth-child(1) {
@@ -67,17 +65,18 @@ header {
 }
 
 .navbar-nav .nav-link.active {
-    color: #111a19;
-    background-color: #886830;
+    color: #fdf4e3;
+    background-color: #0b294e;
 }
 
 .nav-link {
-    color: #ffffff;
+    color: #fdf4e3;
     text-transform: uppercase;
 }
 
 .nav-link:hover {
-    color: #886830;
+    color: #fdf4e3;
+    background-color: #13478618;
 }
 
 .nav-item {
@@ -177,13 +176,13 @@ h2 {
 
 .toggleSinopseBtn {
     display: none;
-    background-color: #00000034; 
+    background-color: #00000060; 
     color: #fff; 
     border: none;
-    border-radius: 5px; 
+    border-radius: 50px; 
     height: 50px;
     width: 50px;
-    font-size: 2rem; 
+    font-size: 2rem;
     font-weight: bold; 
     transition: background-color 0.3s ease, transform 0.3s ease; 
 }
@@ -200,7 +199,6 @@ h2 {
     background-color: #343a40; 
     transform: scale(0.95); 
 }
-
 
 .card-img-overlay {
     position: absolute;
@@ -280,10 +278,6 @@ h2 {
 }
 
 @media (max-width: 991px) {
-    .vertical-center {
-        flex-direction: row;
-    }
-
     .card-img-overlay {
         opacity: 1 !important;
     }
