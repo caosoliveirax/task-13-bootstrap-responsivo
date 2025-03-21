@@ -300,6 +300,10 @@ h2 {
     .card-text {
         font-size: 1.0rem;
     }
+
+    .footer-text {
+        font-size: 0.8rem;
+    }
 }
 
 @media (min-width: 992px) {
