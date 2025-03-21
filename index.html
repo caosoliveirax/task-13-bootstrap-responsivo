@@ -2,25 +2,26 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NxM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <title>NxM - Livros e Mangas</title>
     <link rel="stylesheet" href="./lib/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    
 </head>
 <body data-bs-spy="scroll" data-bs-target="#menu">
     <div id="top"></div>
     <header id="header" class="pt-1 py-lg-2">
         <div class="navbar navbar-expand-md">
             <div class="container-sm">
-                <h1 class="text-white fw-bold vertical-center mb-0">
-                    <span class="novels">NOVELS</span>
-                    <div id="x-animated">
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <span class="mangas">MANGÁS</span>
-                </h1>
+                <a class="text-decoration-none" href="#top">
+                    <h1 class="fw-bold vertical-center mb-0">
+                        <span class="novels">NOVELS</span>
+                        <div id="x-header">
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <span class="mangas">MANGÁS</span>
+                    </h1>
+                </a>
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -39,8 +40,7 @@
                 </nav>
             </div>
         </div>
-    </header>
-    
+    </header> 
     <main>
         <section class="container-fluid p-0">
             <div class="row justify-content-center">
@@ -98,22 +98,30 @@
         <section id="books">
             <div class="container-lg px-5">
                 <h2 class="text-white text-uppercase text-center pt-5 mb-2">Livros populares</h2>
-                <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-5 p-lg-5">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-5 pt-3">
                     <div class="col">
                         <div class="card position-relative h-100">
                             <img src="./images/book-covers/ice-fire.jpg" class="card-img" alt="Capa do livro As Cronicas de Gelo e Fogo: A Furia dos reis">
                             <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
+                                <button class="toggleSinopseBtn mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#sinopse1">
+                                +
+                                </button>
+                                <div class="collapse" id="sinopse1" data-bs-parent="#books" data-bs-parent="#books">
                                 <p class="card-text">Em A fúria dos reis, seis facções disputam o controle de uma terra dividida e o direito de ocupar o Trono de Ferro de Westeros – e estão dispostos a encarar tempestades, levantes e guerras para isso.</p>
-                                <a href="#" class="stretched-link"></a>
+                                </div>
                             </div>
-                        </div>
+                        </div>                          
                     </div>
                     <div class="col">
                         <div class="card position-relative h-100">
                             <img src="./images/book-covers/pride.jpg" class="card-img" alt="Capa do livro Orgulho e Preconceito">
                             <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
-                                <p class="card-text">Elizabeth Bennet vive no campo, na Inglaterra, com sua família. Como uma das filhas mais velhas, enfrenta pressão para se casar. Ao conhecer o rico Darcy, surge uma química, mas a natureza reservada dele ameaça o relacionamento.</p>
-                                <a href="#" class="stretched-link"></a>
+                                <button class="toggleSinopseBtn mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#sinopse2">
+                                    +
+                                </button>
+                                <div class="collapse" id="sinopse2" data-bs-parent="#books">
+                                    <p class="card-text">Elizabeth Bennet vive no campo, na Inglaterra, com sua família. Como uma das filhas mais velhas, enfrenta pressão para se casar. Ao conhecer o rico Darcy, surge uma química, mas a natureza reservada dele ameaça o relacionamento.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -121,26 +129,38 @@
                         <div class="card position-relative h-100">
                             <img src="./images/book-covers/potter.jpg" class="card-img" alt="Capa do livro Harry Potter e a Ordem da Fenix">
                             <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
-                                <p class="card-text">O livro narra as lutas de Harry e seus colegas durante o quinto ano na Escola de Magia e Bruxaria de Hogwarts, que incluem a aparição sub-reptícia do antagonista Lorde Voldemort e a preparação para os NOMs.</p>
-                                <a href="#" class="stretched-link"></a>
+                                <button class="toggleSinopseBtn mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#sinopse3">
+                                    +
+                                </button>
+                                <div class="collapse" id="sinopse3" data-bs-parent="#books">
+                                    <p class="card-text">O livro narra as lutas de Harry e seus colegas durante o quinto ano na Escola de Magia e Bruxaria de Hogwarts, que incluem a aparição sub-reptícia do antagonista Lorde Voldemort e a preparação para os NOMs.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card position-relative h-100">
-                            <img src="./images/book-covers/laranja-lima.jpg" class="card-img" alt="Capa do livro O Chamado de Cthulhu e outros contos">
+                            <img src="./images/book-covers/laranja-lima.jpg" class="card-img" alt="Capa do livro Meu Pé de Laranja Lima">
                             <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
-                                <p class="card-text">Meu Pé de Laranja Lima" conta a história de Zezé, um menino que, em meio à pobreza, encontra consolo em seu pé de laranja lima, Minguinho, e na amizade com o Portuga, redescobrindo esperança e força.</p>
-                                <a href="#" class="stretched-link"></a>
+                                <button class="toggleSinopseBtn mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#sinopse4">
+                                    +
+                                </button>
+                                <div class="collapse" id="sinopse4" data-bs-parent="#books">
+                                    <p class="card-text">"Meu Pé de Laranja Lima" conta a história de Zezé, um menino que, em meio à pobreza, encontra consolo em seu pé de laranja lima, Minguinho, e na amizade com o Portuga, redescobrindo esperança e força.</p>
+                                </div>
                             </div>
-                        </div>
+                        </div>                                             
                     </div>
                     <div class="col">
                         <div class="card position-relative h-100">
                             <img src="./images/book-covers/cthulhu.png" class="card-img" alt="Capa do livro O Chamado de Cthulhu e outros contos">
                             <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
-                                <p class="card-text">O conto de Cthulhu, um deus cultuado por eras que ameaça o fim da humanidade, integra este livro ao lado de sete clássicos do terror.</p>
-                                <a href="#" class="stretched-link"></a>
+                                <button class="toggleSinopseBtn mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#sinopse5">
+                                    +
+                                </button>
+                                <div class="collapse" id="sinopse5" data-bs-parent="#books">
+                                    <p class="card-text">O conto de Cthulhu, um deus cultuado por eras que ameaça o fim da humanidade, integra este livro ao lado de sete clássicos do terror.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -148,8 +168,12 @@
                         <div class="card position-relative h-100">
                             <img src="./images/book-covers/love.jpg" class="card-img" alt="Capa do livro A Razão Do Amor">
                             <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
-                                <p class="card-text">A carreira de Bee Königswasser está indo de mal a pior. Quando surge um processo seletivo para liderar um projeto de neuroengenharia da Nasa, ela se faz a pergunta que sempre guiou sua vida: o que Marie Curie faria?</p>
-                                <a href="#" class="stretched-link"></a>
+                                <button class="toggleSinopseBtn mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#sinopse6">
+                                    +
+                                </button>
+                                <div class="collapse" id="sinopse6" data-bs-parent="#books">
+                                    <p class="card-text">A carreira de Bee Königswasser está indo de mal a pior. Quando surge um processo seletivo para liderar um projeto de neuroengenharia da Nasa, ela se faz a pergunta que sempre guiou sua vida: o que Marie Curie faria?</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -159,13 +183,17 @@
         <section id="mangas">
             <div class="container-lg px-5 mt-5">
                 <h2 class="text-white text-uppercase text-center mb-2">Mangás populares</h2>
-                <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-5 p-lg-5">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-5 pt-3">
                     <div class="col">
                         <div class="card position-relative h-100">
                             <img src="./images/manga-covers/look-back.jpg" class="card-img" alt="Capa do mangá Look Back">
                             <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
-                                <p class="card-text">Fujino, uma aluna do quarto ano, publica uma série de tirinhas no jornalzinho escolar e recebe ótimas críticas dos colegas de sala. Um dia, seu professor diz que Kyomoto, uma aluna desconhecida, quer publicar seu próprio mangá no jornal.</p>
-                                <a href="#" class="stretched-link"></a>
+                                <button class="toggleSinopseBtn mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#sinopse7">
+                                    +
+                                </button>
+                                <div class="collapse" id="sinopse7" data-bs-parent="#mangas">
+                                    <p class="card-text">Fujino, uma aluna do quarto ano, publica uma série de tirinhas no jornalzinho escolar e recebe ótimas críticas dos colegas de sala. Um dia, seu professor diz que Kyomoto, uma aluna desconhecida, quer publicar seu próprio mangá no jornal.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -173,8 +201,12 @@
                         <div class="card position-relative h-100">
                             <img src="./images/manga-covers/evangelion.jpg" class="card-img" alt="Capa do mangá Neon Genesis Evangelion">
                             <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
-                                <p class="card-text">Neon Genesis Evangelion narra a história de adolescentes que pilotam robôs gigantes para enfrentar os Anjos, em um mundo pós-apocalíptico onde a NERV tenta impedir o Terceiro Impacto.</p>
-                                <a href="#" class="stretched-link"></a>
+                                <button class="toggleSinopseBtn mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#sinopse8">
+                                    +
+                                </button>
+                                <div class="collapse" id="sinopse8" data-bs-parent="#mangas">
+                                    <p class="card-text">Neon Genesis Evangelion narra a história de adolescentes que pilotam robôs gigantes para enfrentar os Anjos, em um mundo pós-apocalíptico onde a NERV tenta impedir o Terceiro Impacto.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -182,8 +214,12 @@
                         <div class="card position-relative h-100">
                             <img src="./images/manga-covers/one-piece.jpg" class="card-img" alt="Capa do mangá One Piece Volume 18">
                             <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
-                                <p class="card-text">Em One Piece, acompanhamos Monkey D. Luffy e sua tripulação em aventuras por oceanos e ilhas incríveis, em busca do lendário tesouro de Gold Roger. Determinado, Luffy sonha em se tornar o Rei dos Piratas.</p>
-                                <a href="#" class="stretched-link"></a>
+                                <button class="toggleSinopseBtn mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#sinopse9">
+                                    +
+                                </button>
+                                <div class="collapse" id="sinopse9" data-bs-parent="#mangas">
+                                    <p class="card-text">Em One Piece, acompanhamos Monkey D. Luffy e sua tripulação em aventuras por oceanos e ilhas incríveis, em busca do lendário tesouro de Gold Roger. Determinado, Luffy sonha em se tornar o Rei dos Piratas.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -191,8 +227,12 @@
                         <div class="card position-relative h-100">
                             <img src="./images/manga-covers/dragonball.jpg" class="card-img" alt="Capa do mangá Dragonball Edição Definitiva Volume 3">
                             <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
-                                <p class="card-text">A série segue as aventuras do protagonista, Son Goku, desde sua infância até a idade adulta enquanto ele treina artes marciais e explora o mundo em busca de sete esferas conhecidas como as Esferas do Dragão, que convocam um dragão que concede um desejo quando reunidas.</p>
-                                <a href="#" class="stretched-link"></a>
+                                <button class="toggleSinopseBtn mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#sinopse10">
+                                    +
+                                </button>
+                                <div class="collapse" id="sinopse10" data-bs-parent="#mangas">
+                                    <p class="card-text">A série segue as aventuras do protagonista, Son Goku, desde sua infância até a idade adulta enquanto ele treina artes marciais e explora o mundo em busca de sete esferas conhecidas como as Esferas do Dragão, que convocam um dragão que concede um desejo quando reunidas.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -200,8 +240,12 @@
                         <div class="card position-relative h-100">
                             <img src="./images/manga-covers/tonikaku.jpg" class="card-img" alt="Capa do mangá Tonikaku Kawaii Volume 1">
                             <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
-                                <p class="card-text">Nasa Yuzakié é salvo de um atropelamento por uma bela garota no dia do vestibular. Apaixonado, ele se declara, mas ela aceita namorar apenas com a condição de se casarem antes.</p>
-                                <a href="#" class="stretched-link"></a>
+                                <button class="toggleSinopseBtn mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#sinopse11">
+                                    +
+                                </button>
+                                <div class="collapse" id="sinopse11" data-bs-parent="#mangas">
+                                    <p class="card-text">Nasa Yuzakié é salvo de um atropelamento por uma bela garota no dia do vestibular. Apaixonado, ele se declara, mas ela aceita namorar apenas com a condição de se casarem antes.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -209,8 +253,12 @@
                         <div class="card position-relative h-100">
                             <img src="./images/manga-covers/dandadan.jpg" class="card-img" alt="Capa do mangá Dandadan Volume 2">
                             <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
-                                <p class="card-text">Dandadan conta a história de Momo Ayase e Ken Takakura, dois estudantes do ensino médio que discordam sobre a existência de alienígenas e espíritos. Os dois fazem uma aposta para provar quem está certo e acabam se envolvendo em uma guerra entre facções de criaturas ocultas. </p>
-                                <a href="#" class="stretched-link"></a>
+                                <button class="toggleSinopseBtn mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#sinopse12">
+                                    +
+                                </button>
+                                <div class="collapse" id="sinopse12" data-bs-parent="#mangas">
+                                    <p class="card-text">Dandadan conta a história de Momo Ayase e Ken Takakura, dois estudantes do ensino médio que discordam sobre a existência de alienígenas e espíritos. Os dois fazem uma aposta para provar quem está certo e acabam se envolvendo em uma guerra entre facções de criaturas ocultas. </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -221,6 +269,9 @@
     <footer class="text-uppercase text-white text-center p-2">
         <p class="">Desenvolvido por Carlos Oliveira</p>
     </footer>
+    <script src="./main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
     <script src="./lib/bootstrap.bundle.min.js"></script>
 </body>
 </html>

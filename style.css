@@ -28,28 +28,20 @@ header {
     color: #8a8635;
 }
 
-.navbar-brand span {
-    width: 0px;
-}
-
 .vertical-center {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.navbar-brand {
-    font-size: 3rem;
-}
-
-#x-animated {
+#x-header {
     position: relative;
     width: 40px;
     height: 10px; 
     margin: 10px 0; 
 }
 
-#x-animated span {
+#x-header span {
     position: absolute;
     top: 50%;
     width: 100%;
@@ -62,11 +54,11 @@ header {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(136, 104, 48)' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-#x-animated span:nth-child(1) {
+#x-header span:nth-child(1) {
     transform: translateY(-50%) rotate(45deg);
 }
 
-#x-animated span:nth-child(2) {
+#x-header span:nth-child(2) {
     transform: translateY(-50%) rotate(-45deg);
 }
 
@@ -77,6 +69,7 @@ header {
 
 .nav-link {
     color: #ffffff;
+    text-transform: uppercase;
 }
 
 .nav-link:hover {
@@ -128,6 +121,33 @@ h2 {
     transition: transform 500ms ease;
 }
 
+.toggleSinopseBtn {
+    display: none;
+    background-color: #00000034; 
+    color: #fff; 
+    border: none;
+    border-radius: 5px; 
+    height: 50px;
+    width: 50px;
+    font-size: 2rem; 
+    font-weight: bold; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.toggleSinopseBtn:hover {
+    background-color: #49505763; 
+    color: #fff; 
+    transform: scale(1.05); 
+    cursor: pointer; 
+}
+
+.toggleSinopseBtn:active {
+    color: #fff; 
+    background-color: #343a40; 
+    transform: scale(0.95); 
+}
+
+
 .card-img-overlay {
     position: absolute;
     top: 0;
@@ -168,8 +188,7 @@ h2 {
     }
 
     .nav-link {
-        font-size: 0.7rem;
-        text-transform: uppercase;
+        font-size: 0.8rem;
     }
 
     .nav-link:hover {
@@ -184,18 +203,11 @@ h2 {
         box-shadow: none;
     }
 
-    .card:hover .card-img {
-        transform: unset; 
-    }
-
-    .card:hover .card-img-overlay {
-        opacity: unset;
-        background: unset;
-        box-shadow: unset;
+    .toggleSinopseBtn {
+        display: inline-block;
     }
 
     .card-text {
-        display: none;
         font-size: 0.9rem;
     }
 
@@ -214,17 +226,31 @@ h2 {
         flex-direction: row;
     }
 
-    .card:hover .card-img {
-        transform: unset; 
+    .card-img-overlay {
+        opacity: 1 !important;
     }
 
-    .card:hover .card-img-overlay {
-        opacity: unset;
-        background: unset;
-        box-shadow: unset;
+    .nav-link:hover {
+        color: #fff;
+    }
+
+    .toggleSinopseBtn {
+        display: inline-block;
     }
 
     .card-text {
-        display: none;
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .collapse {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    }
+    
+    .toggleSinopseBtn {
+    display: none !important;
     }
 }
