@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-padding-top: 220px;
+}
+
 body {
     font-family: "Helvetica Neue";
     background-color: #111a19; 
@@ -108,6 +112,56 @@ h2 {
     font-weight: bold;
 }
 
+@keyframes glow-green {
+    50% {
+        box-shadow: 0 0 40px hsl(133, 100%, 74%);
+    }
+}
+
+@keyframes glow-blue {
+    50% {
+        box-shadow: 0 0 40px hsl(210, 100%, 74%);
+    }
+}
+
+@keyframes glow-red {
+    50% {
+        box-shadow: 0 0 40px hsl(0, 100%, 74%);
+    }
+}
+
+@keyframes glow-yellow {
+    50% {
+        box-shadow: 0 0 40px hsl(60, 100%, 74%);
+    }
+}
+
+@keyframes glow-pink {
+    50% {
+        box-shadow: 0 0 40px hsl(2, 72%, 73%);
+    }
+}
+
+#cthulhu[anim="glow"]:not(.toggled) {
+    animation: glow-green var(--ease-elastic-in-1) 800ms infinite alternate;
+}
+
+#icefire[anim="glow"]:not(.toggled) {
+    animation: glow-blue var(--ease-elastic-in-1) 800ms infinite alternate;
+}
+
+#dragonball[anim="glow"]:not(.toggled) {
+    animation: glow-red var(--ease-elastic-in-1) 800ms infinite alternate;
+}
+
+#onepiece[anim="glow"]:not(.toggled) {
+    animation: glow-yellow var(--ease-elastic-in-1) 800ms infinite alternate;
+}
+
+#pride[anim="glow"]:not(.toggled) {
+    animation: glow-pink var(--ease-elastic-in-1) 800ms infinite alternate;
+}
+
 .card {
     overflow: hidden;
     border: none;
@@ -164,7 +218,7 @@ h2 {
 
 .card:hover .card-img-overlay {
     opacity: 1;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.89), rgba(0, 0, 0, 0.164));
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.849), rgba(0, 0, 0, 0.445));
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -216,8 +270,12 @@ h2 {
         object-fit: cover;
     }
 
-    p {
+    .carousel-caption {
         font-size: 1rem;
+    }
+
+    .footer-text {
+        font-size: 0.6rem;
     }
 }
 

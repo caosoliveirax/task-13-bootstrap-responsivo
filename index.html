@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
     <title>NxM - Livros e Mangas</title>
+    <link rel="stylesheet" href="./lib/easings.min.css">
     <link rel="stylesheet" href="./lib/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -48,34 +49,44 @@
                     <div class="carousel carousel-fade slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div data-bs-interval="4000" class="carousel-item active">
-                                <img class="d-block w-100" src="./images/carousel/cthulhu1.jpg" alt="">
+                                <a href="#cthulhu">
+                                    <img class="d-block w-100" src="./images/carousel/cthulhu1.jpg" alt="">
                                 <div class="carousel-caption">
                                     <p>Adentre os horrores cósmicos de Lovecraft</p>
                                 </div>
+                                </a>
                             </div>
                             <div data-bs-interval="5000" class="carousel-item">
-                                <img class="d-block w-100" src="./images/carousel/onepiece2.png" alt="">
+                                <a href="#onepiece">
+                                    <img class="d-block w-100" src="./images/carousel/onepiece2.png" alt="">
                                 <div class="carousel-caption">
                                     <p>Acompanhe a tripulação do Chapéu De Palha</p>
                                 </div>
+                                </a>
                             </div>
                             <div data-bs-interval="5000" class="carousel-item">
-                                <img class="d-block w-100" src="./images/carousel/dragonball3.jpg" alt="">
+                                <a href="#dragonball">
+                                    <img class="d-block w-100" src="./images/carousel/dragonball3.jpg" alt="">
                                 <div class="carousel-caption">
                                     <p>Explore o poder das Esferas do Dragão com Goku e seus amigos</p>
                                 </div>
+                                </a>
                             </div>
                             <div data-bs-interval="4000" class="carousel-item">
-                                <img class="d-block w-100" src="./images/carousel/ice-fire4.jpg" alt="">
+                                <a href="#icefire">
+                                    <img class="d-block w-100" src="./images/carousel/ice-fire4.jpg" alt="">
                                 <div class="carousel-caption">
                                     <p>Caminhe entre dragões e reis em Westeros</p>
                                 </div>
+                                </a>
                             </div>
                             <div data-bs-interval="6000" class="carousel-item">
-                                <img class="d-block w-100" src="./images/carousel/pride5.jpg" alt="">
+                                <a href="#pride">
+                                    <img class="d-block w-100" src="./images/carousel/pride5.jpg" alt="">
                                 <div class="carousel-caption">
                                     <p>Mergulhe no charme da Inglaterra com Elizabeth Bennet e o enigmático Mr. Darcy.</p>
                                 </div>
+                                </a>
                             </div>
                             <button class="carousel-control-prev" data-bs-target=".carousel" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon"></span>
@@ -100,20 +111,20 @@
                 <h2 class="text-white text-uppercase text-center pt-5 mb-2">Livros populares</h2>
                 <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-5 pt-3">
                     <div class="col">
-                        <div class="card position-relative h-100">
-                            <img src="./images/book-covers/ice-fire.jpg" class="card-img" alt="Capa do livro As Cronicas de Gelo e Fogo: A Furia dos reis">
+                        <div id="icefire" class="card position-relative h-100 toggled" anim="glow">
+                            <img src="./images/book-covers/ice-fire.jpg" class="card-img" alt="Capa do livro As Cronicas de Gelo e Fogo: A Guerra Dos Tronos">
                             <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
                                 <button class="toggleSinopseBtn mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#sinopse1">
                                 +
                                 </button>
-                                <div class="collapse" id="sinopse1" data-bs-parent="#books" data-bs-parent="#books">
-                                <p class="card-text">Em A fúria dos reis, seis facções disputam o controle de uma terra dividida e o direito de ocupar o Trono de Ferro de Westeros – e estão dispostos a encarar tempestades, levantes e guerras para isso.</p>
+                                <div class="collapse" id="sinopse1" data-bs-parent="#books">
+                                <p class="card-text">O verão dura décadas, o inverno, uma vida, e a guerra dos tronos começa. Lorde Eddard Stark, Guardião do Norte, relutantemente aceita ser a Mão do Rei e parte para a corte, onde intrigas e traições reinam.</p>
                                 </div>
                             </div>
                         </div>                          
                     </div>
                     <div class="col">
-                        <div class="card position-relative h-100">
+                        <div id="pride" class="card position-relative h-100 toggled" anim="glow">
                             <img src="./images/book-covers/pride.jpg" class="card-img" alt="Capa do livro Orgulho e Preconceito">
                             <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
                                 <button class="toggleSinopseBtn mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#sinopse2">
@@ -152,7 +163,7 @@
                         </div>                                             
                     </div>
                     <div class="col">
-                        <div class="card position-relative h-100">
+                        <div id="cthulhu" class="card position-relative h-100 toggled" anim="glow">
                             <img src="./images/book-covers/cthulhu.png" class="card-img" alt="Capa do livro O Chamado de Cthulhu e outros contos">
                             <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
                                 <button class="toggleSinopseBtn mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#sinopse5">
@@ -181,7 +192,7 @@
             </div>
         </section>
         <section id="mangas">
-            <div class="container-lg px-5 mt-5">
+            <div class="container-lg px-5 mt-5 mb-5">
                 <h2 class="text-white text-uppercase text-center mb-2">Mangás populares</h2>
                 <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-5 pt-3">
                     <div class="col">
@@ -211,7 +222,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card position-relative h-100">
+                        <div id="onepiece" class="card position-relative h-100 toggled" anim="glow">
                             <img src="./images/manga-covers/one-piece.jpg" class="card-img" alt="Capa do mangá One Piece Volume 18">
                             <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
                                 <button class="toggleSinopseBtn mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#sinopse9">
@@ -224,7 +235,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card position-relative h-100">
+                        <div id="dragonball" class="card position-relative h-100 toggled" anim="glow">
                             <img src="./images/manga-covers/dragonball.jpg" class="card-img" alt="Capa do mangá Dragonball Edição Definitiva Volume 3">
                             <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
                                 <button class="toggleSinopseBtn mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#sinopse10">
@@ -266,12 +277,12 @@
             </div>
         </section>
     </main>
-    <footer class="text-uppercase text-white text-center p-2">
-        <p class="">Desenvolvido por Carlos Oliveira</p>
+    <footer class="text-uppercase text-white text-center pt-5">
+        <p class="footer-text">Desenvolvido por Carlos Oliveira | 2025 ©Todos os direitos reservados
     </footer>
-    <script src="./main.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
     <script src="./lib/bootstrap.bundle.min.js"></script>
+    <script src="./main.js"></script>
 </body>
 </html>
