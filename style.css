@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    font-family: "Helvetica Neue";
+    font-family:'Times New Roman', sans-serif;
     background-color: #0E0F15; 
 }
 
@@ -23,6 +23,12 @@ header {
     z-index: 100;
     background-color: #0e0f15a9;
 }
+
+.navbar-brand h1 {
+    font-family: "Boldonse", system-ui;
+    font-size: 2rem;
+}
+
 .novels {
     color: #feb21a;
 }
@@ -226,12 +232,13 @@ h2 {
 
 .card-text {
     font-size: 1.3rem;
-    color: #fff;
+    color: #fdf4e3;
     z-index: 1;
 }
 
 @media (max-width: 767px) {
-    h1 {
+    .navbar-brand h1 {
+        font-family: "Boldonse", system-ui;
         font-size: 1.5rem;
     }
 
